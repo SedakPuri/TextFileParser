@@ -47,15 +47,12 @@ public class Fun {
 					count[current % 97]++;
 				}
 			}
-			
-			//Object Creation of new Class
-			FunClass xD = new FunClass();
-			
+	
 			//Finding the Maximum Count by Parsing through all the counters
 			for(int i = 0; i < count.length; i++) {
 				if (count[i] > maxCount) {
 					maxCount = count[i];
-					maxChar = xD.getAssociatedLetter(i); //Will return a char of the letter that is associated with that index (i.g. 0 = a, 1 = b, 2 = c, etc......)
+					maxChar = ((char) i + 97);
 				}
 			}
 		}
